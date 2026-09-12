@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Linha",
+      "hasCanvas": false,
+      "bodyTextLen": 1194,
+      "bodyTextHash": "ac5ebb293e3d07fd1b469de3dde486dff79d7d324d9e4dd96cbd83b698416e23",
+      "bodyTextPrefix": "Linha v1.0 Hoje Livro Vitrine Caderno Progresso Vault V1.0 · 365",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Linha",
+      "hasCanvas": false,
+      "bodyTextLen": 1189,
+      "bodyTextHash": "c91fd344dc6fc730f2d1c042df4e8c67af71158d852a7163e2ee8422641de687",
+      "bodyTextPrefix": "Linha Hoje Livro Vitrine Caderno Progresso Vault V1.0 · 365 H · ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

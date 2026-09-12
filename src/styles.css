@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #13110e;
+  --color-bg-raised: #1c1915;
+  --color-bg-inset: #0e0c0a;
+  --color-fg: #f0e8dc;
+  --color-muted: #a3988a;
+  --color-faint: #6e665c;
+  --color-line: #2c2823;
+  --color-line-strong: #3f3932;
+  --color-accent: #b8c4b0;
+  --color-accent-fg: #13110e;
+  --color-ok: #8fad86;
+  --color-warn: #c4a574;
+  --color-danger: #c45c4a;
+  --color-paper: #ebe6dc;
+
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", serif;
+  --font-sans: "Figtree", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  --shadow-border: 0 0 0 1px rgba(240, 232, 220, 0.08);
+  --shadow-border-hover: 0 0 0 1px rgba(240, 232, 220, 0.14);
+
+  --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html,
+  body,
+  #app {
+    min-height: 100%;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-accent) 40%, transparent);
+    color: var(--color-fg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
